@@ -3,6 +3,8 @@
 #include <cstdlib>
 #include <cstdio>
 #include <cmath>
+#include <ctime>
+#include <chrono>
 
 #define GLEW_STATIC 1
 #include <GL/glew.h>

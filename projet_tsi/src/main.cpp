@@ -21,16 +21,23 @@ text text_to_draw[nb_text];
 
 // Variables supplémentaire
 // **************************************************************************
-float amradillo_x = -2.0;
-float amradillo_y = 0.0;
-float amradillo_z = -10.0;
 
-// AJOUT DE FONCTIONS
-// **************************************************************************************************************************
+// Gestion du saut
+// __________________________________________________
+bool jump_flag = false;
+bool jump_enable = true;
 
-void move_armadillo(float x, float y, float z) {
-    obj[2].tr.translation = vec3(2.0+x, 0.0+y, -10.0+z);
-}
+float jump_time_0 = 0.000000000; // first moment of the jump
+float jump_time = 0.00000000000; //
+float g = 9.810000;
+float jump_speed = 0.30000;
+//____________________________________________________
+
+// Gestion du temps
+// ___________________________________________________
+float timer = 0;
+// ___________________________________________________
+
 
 // **************************************************************************************************************************
 // **************************************************************************
@@ -45,6 +52,7 @@ static void init()
 
   cam.projection = matrice_projection(60.0f*M_PI/180.0f,1.0f,0.01f,100.0f);
   cam.tr.translation = vec3(0.0f, 1.0f, 0.0f);
+  
   // cam.tr.translation = vec3(0.0f, 20.0f, 0.0f);
   // cam.tr.rotation_center = vec3(0.0f, 20.0f, 0.0f);
   // cam.tr.rotation_euler = vec3(M_PI/2., 0.0f, 0.0f);
@@ -54,7 +62,8 @@ static void init()
   init_model_3();
 
   gui_program_id = glhelper::create_program_from_file("shaders/gui.vert", "shaders/gui.frag"); CHECK_GL_ERROR();
-
+  
+  /*
   text_to_draw[0].value = "CPE";
   text_to_draw[0].bottomLeft = vec2(-0.2, 0.5);
   text_to_draw[0].topRight = vec2(0.2, 1);
@@ -64,6 +73,8 @@ static void init()
   text_to_draw[1].value = "Lyon";
   text_to_draw[1].bottomLeft.y = 0.0f;
   text_to_draw[1].topRight.y = 0.5f;
+
+  */
 }
 
 /*****************************************************************************\
@@ -98,17 +109,25 @@ static void keyboard_callback(unsigned char key, int, int)
       exit(0);
       break;
     case 'z':
-        move_armadillo(0.0,0.1,0.0);
-      break;
-    case 'q':
-        move_armadillo(0.1, 0.0, 0.0);
-        break;
-    case 'd':
-        move_armadillo(-0.1, 0.0, 0.0);
+        obj[2].tr.translation.z += 0.1f; // Deplacement
         break;
     case 's':
-        move_armadillo(0.0,-0.1, 0.0);
+        obj[2].tr.translation.z += -0.1f;
         break;
+    case 'q':
+        obj[2].tr.translation.x += 0.1f;
+        break;
+    case 'd':
+        obj[2].tr.translation.x += -0.1f;
+        break;
+    case 'x':
+        if (jump_enable) {
+            jump_enable = false;
+            jump_flag = true;
+            jump_time_0 = timer;
+        }
+        break;
+
   }
 }
 
@@ -125,8 +144,24 @@ static void special_callback(int key, int, int)
 \*****************************************************************************/
 static void timer_callback(int)
 {
-  glutTimerFunc(25, timer_callback, 0);
-  glutPostRedisplay();
+    timer += 0.001;
+
+    if (jump_flag) {
+        jump_time = timer - jump_time_0;
+        if ((-g*jump_time*jump_time + jump_speed * jump_time) > 0) {
+            printf("Position = %f\n",(-g * jump_time * jump_time + jump_speed * jump_time));
+            obj[2].tr.translation.y += -2.00000000000000 * g * jump_time + jump_speed;
+            if (obj[2].tr.translation.y<0) {
+                obj[2].tr.translation.y = 0;
+            }
+        }
+        else {
+            jump_flag = false;
+            jump_enable = true;
+        }
+    }
+    glutTimerFunc(25, timer_callback, 0);
+    glutPostRedisplay();
 }
 
 /*****************************************************************************\
