@@ -1,0 +1,12 @@
+C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/CMakeFiles/projet.dir
+C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/CMakeFiles/INSTALL.dir
+C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/extern/glew/CMakeFiles/libglew_static.dir
+C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/extern/glew/CMakeFiles/INSTALL.dir
+C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/extern/glew/CMakeFiles/ALL_BUILD.dir
+C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/extern/freeglut/CMakeFiles/freeglut_static.dir
+C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/extern/freeglut/CMakeFiles/INSTALL.dir
+C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/extern/freeglut/CMakeFiles/ALL_BUILD.dir
+C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/tools/CMakeFiles/tools.dir
+C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/tools/CMakeFiles/INSTALL.dir

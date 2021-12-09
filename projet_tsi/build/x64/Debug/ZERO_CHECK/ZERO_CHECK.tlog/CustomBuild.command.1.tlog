@@ -1,0 +1,10 @@
+^C:\USERS\ROMAI\ONEDRIVE\DOCUMENTS\SCHOOL\4A\TSI\TP\TSI_PROJET\PROJET_TSI\BUILD\CMAKEFILES\9D236EFD341DE1A7BC97F0DF4C061271\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi -BC:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/openGL_CPE.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

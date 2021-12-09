@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\CMakeFiles\9d236efd341de1a7bc97f0df4c061271\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{C7B6DBDB-8498-3B76-AA56-79CB5E984505}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

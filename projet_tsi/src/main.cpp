@@ -19,7 +19,22 @@ objet3d obj[nb_obj];
 const int nb_text = 2;
 text text_to_draw[nb_text];
 
-bool 
+// Variables supplémentaire
+// **************************************************************************
+float amradillo_x = -2.0;
+float amradillo_y = 0.0;
+float amradillo_z = -10.0;
+
+// AJOUT DE FONCTIONS
+// **************************************************************************************************************************
+
+void move_armadillo(float x, float y, float z) {
+    obj[2].tr.translation = vec3(2.0+x, 0.0+y, -10.0+z);
+}
+
+// **************************************************************************************************************************
+// **************************************************************************
+
 
 /*****************************************************************************\
 * initialisation                                                              *
@@ -35,7 +50,7 @@ static void init()
   // cam.tr.rotation_euler = vec3(M_PI/2., 0.0f, 0.0f);
 
   init_model_1();
-  init_model_2();
+  init_model_2();   
   init_model_3();
 
   gui_program_id = glhelper::create_program_from_file("shaders/gui.vert", "shaders/gui.frag"); CHECK_GL_ERROR();
@@ -78,11 +93,22 @@ static void keyboard_callback(unsigned char key, int, int)
     case 'p':
       glhelper::print_screen();
       break;
-    case 'q':
     case 'Q':
     case 27:
       exit(0);
       break;
+    case 'z':
+        move_armadillo(0.0,0.1,0.0);
+      break;
+    case 'q':
+        move_armadillo(0.1, 0.0, 0.0);
+        break;
+    case 'd':
+        move_armadillo(-0.1, 0.0, 0.0);
+        break;
+    case 's':
+        move_armadillo(0.0,-0.1, 0.0);
+        break;
   }
 }
 
@@ -364,10 +390,12 @@ void init_model_3()
 
   // Affecte une transformation sur les sommets du maillage
   float s = 0.01f;
+
   mat4 transform = mat4(   s, 0.0f, 0.0f, 0.0f,
-      0.0f,    s, 0.0f, 0.50f,
+      0.0f,    s, 0.0f, 0.70f, // modification 0.5->0.7
       0.0f, 0.0f,   s , 0.0f,
       0.0f, 0.0f, 0.0f, 1.0f);
+
   apply_deformation(&m,matrice_rotation(M_PI/2.0f,1.0f,0.0f,0.0f));
   apply_deformation(&m,matrice_rotation(M_PI,0.0f,1.0f,0.0f));
   apply_deformation(&m,transform);
@@ -385,3 +413,4 @@ void init_model_3()
 
   obj[2].tr.translation = vec3(2.0, 0.0, -10.0);
 }
+
