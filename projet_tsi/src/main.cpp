@@ -30,17 +30,34 @@ bool jump_enable = true;
 float jump_time_0 = 0.000000000; // first moment of the jump
 float jump_time = 0.00000000000; //
 float g = 9.810000;
-float jump_speed = 0.80000;
+float jump_speed = 0.50000;
+
+// Gestion des deplacements
 //____________________________________________________
+enum directions {UP,DOWN,LEFT,RIGHT};
+bool move[] = {false,false,false,false};
 
 // Gestion du temps
 // ___________________________________________________
 float timer = 0;
 float time_step = 0.0025;
+
+// Gestion des collisions
 // ___________________________________________________
+float rayon_collision = 1.0;
+
+bool collision_flag = false;
+
+float collision_time_0 = 0.000000000; // first moment of the jump
+float collision_time = 0.00000000000; //
+
+// **************************************************************************
+
+float norm2point(objet3d objet1, objet3d objet2) {
+    return sqrt((objet2.tr.translation.x - objet1.tr.translation.x )*(objet2.tr.translation.x - objet1.tr.translation.x)+(objet2.tr.translation.y - objet1.tr.translation.y)*(objet2.tr.translation.y - objet1.tr.translation.y) + (objet2.tr.translation.z - objet1.tr.translation.z)*(objet2.tr.translation.z - objet1.tr.translation.z));
+}
 
 
-// **************************************************************************************************************************
 // **************************************************************************
 
 
@@ -109,18 +126,7 @@ static void keyboard_callback(unsigned char key, int, int)
     case 27:
       exit(0);
       break;
-    case 'z':
-        obj[2].tr.translation.z += 0.1f; // Deplacement
-        break;
-    case 's':
-        obj[2].tr.translation.z += -0.1f;
-        break;
-    case 'q':
-        obj[2].tr.translation.x += 0.1f;
-        break;
-    case 'd':
-        obj[2].tr.translation.x += -0.1f;
-        break;
+
     case 'x':
         if (jump_enable) {
             jump_enable = false;
@@ -137,6 +143,39 @@ static void keyboard_callback(unsigned char key, int, int)
 \*****************************************************************************/
 static void special_callback(int key, int, int)
 {
+    switch (key){
+
+    case GLUT_KEY_UP:
+        move[UP] = true;
+        break;
+    case GLUT_KEY_DOWN:
+        move[DOWN] = true;
+        break;
+    case GLUT_KEY_LEFT:
+        move[LEFT] = true;
+        break;
+    case GLUT_KEY_RIGHT:
+        move[RIGHT] = true;
+        break;
+    }
+}
+
+static void special_callback_up(int key, int, int)
+{
+    switch (key){
+    case GLUT_KEY_UP:
+        move[UP] = false;
+        break;
+    case GLUT_KEY_DOWN:
+        move[DOWN] = false;
+        break;
+    case GLUT_KEY_LEFT:
+        move[LEFT] = false;
+        break;
+    case GLUT_KEY_RIGHT:
+        move[RIGHT] = false;
+        break;
+    }
 }
 
 
@@ -147,10 +186,20 @@ static void timer_callback(int)
 {
     timer += time_step;
 
+    //detection des collisions
+    // -----------------------------------------------------------------------------------
+
+    if (norm2point(obj[2], obj[0]) < rayon_collision * rayon_collision) {
+        printf("Collision!\n");
+    }
+
+    // Saut du personnage
+    // -----------------------------------------------------------------------------------
+
     if (jump_flag) {
         jump_time = timer - jump_time_0;
         if ((-g*jump_time*jump_time + jump_speed * jump_time) > 0) {
-            printf("Position = %f\n",(-g * jump_time * jump_time + jump_speed * jump_time));
+            //printf("Position = %f\n",(-g * jump_time * jump_time + jump_speed * jump_time));
             obj[2].tr.translation.y += -2.00000000000000 * g * jump_time + jump_speed;
             if (obj[2].tr.translation.y<0) {
                 obj[2].tr.translation.y = 0;
@@ -161,6 +210,29 @@ static void timer_callback(int)
             jump_enable = true;
         }
     }
+
+    // Deplacement du personnage
+    // ---------------------------------------------------------------------------------------
+
+    // Up
+    if (move[UP]){
+        obj[2].tr.translation.z += 0.1f; // Deplacement
+    }
+
+    // Down
+    if (move[DOWN]) {
+        obj[2].tr.translation.z += -0.1f;
+    }
+    // Left
+    if (move[LEFT]) {
+        obj[2].tr.translation.x += 0.1f;
+    }
+
+    //Right
+    if (move[RIGHT]) {
+        obj[2].tr.translation.x += -0.1f;
+    }
+
     glutTimerFunc(25, timer_callback, 0);
     glutPostRedisplay();
 }
@@ -178,6 +250,7 @@ int main(int argc, char** argv)
   glutDisplayFunc(display_callback);
   glutKeyboardFunc(keyboard_callback);
   glutSpecialFunc(special_callback);
+  glutSpecialUpFunc(special_callback_up);
   glutTimerFunc(25, timer_callback, 0);
 
   glewExperimental = true;
@@ -350,6 +423,7 @@ void init_model_1()
       0.0f,    s, 0.0f, 0.0f,
       0.0f, 0.0f,   s , 0.0f,
       0.0f, 0.0f, 0.0f, 1.0f);
+
   apply_deformation(&m,transform);
 
   // Centre la rotation du modele 1 autour de son centre de gravite approximatif

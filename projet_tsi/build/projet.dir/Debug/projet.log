@@ -1,12 +1,10 @@
-﻿  Building Custom Rule C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/CMakeLists.txt
-  main.cpp
+﻿  main.cpp
 C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\src\main.cpp(32,19): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\src\main.cpp(33,27): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\src\main.cpp(39,25): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\src\main.cpp(54,74): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\src\main.cpp(154,74): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\src\main.cpp(363,45): warning C4267: '=': conversion from 'size_t' to 'GLuint', possible loss of data
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\src\main.cpp(435,65): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\src\main.cpp(436,60): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\src\main.cpp(444,45): warning C4267: '=': conversion from 'size_t' to 'GLuint', possible loss of data
+C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\src\main.cpp(43,25): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\src\main.cpp(71,74): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\src\main.cpp(203,74): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\src\main.cpp(437,45): warning C4267: '=': conversion from 'size_t' to 'GLuint', possible loss of data
+C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\src\main.cpp(509,65): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\src\main.cpp(510,60): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\src\main.cpp(518,45): warning C4267: '=': conversion from 'size_t' to 'GLuint', possible loss of data
   projet.vcxproj -> C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\Debug\projet.exe
