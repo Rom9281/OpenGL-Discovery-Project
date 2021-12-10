@@ -180,8 +180,8 @@ static void init()
 {
   // Chargement du shader
   shader_program_id = glhelper::create_program_from_file(
-      "programme_11/src/shader.vert", 
-      "programme_11/src/shader.frag"); CHECK_GL_ERROR();
+      "shaders/shader.vert", 
+      "shaders/shader.frag"); CHECK_GL_ERROR();
   glUseProgram(shader_program_id);
 
     //matrice de projection
