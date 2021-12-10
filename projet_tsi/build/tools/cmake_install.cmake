@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/tools
+# Install script for directory: U:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi/tools
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

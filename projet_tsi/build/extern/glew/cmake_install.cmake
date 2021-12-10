@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/extern/glew
+# Install script for directory: U:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi/extern/glew
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,22 +34,22 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/lib/Debug/glewd.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "U:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi/build/lib/Debug/glewd.lib")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/lib/Release/glew.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "U:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi/build/lib/Release/glew.lib")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/lib/MinSizeRel/glew.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "U:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi/build/lib/MinSizeRel/glew.lib")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/lib/RelWithDebInfo/glew.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "U:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi/build/lib/RelWithDebInfo/glew.lib")
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/GL" TYPE FILE FILES
-    "C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/extern/glew/include/GL/eglew.h"
-    "C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/extern/glew/include/GL/glew.h"
-    "C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/extern/glew/include/GL/glxew.h"
-    "C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/extern/glew/include/GL/wglew.h"
+    "U:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi/extern/glew/include/GL/eglew.h"
+    "U:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi/extern/glew/include/GL/glew.h"
+    "U:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi/extern/glew/include/GL/glxew.h"
+    "U:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi/extern/glew/include/GL/wglew.h"
     )
 endif()
 

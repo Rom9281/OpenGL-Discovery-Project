@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\projet_tsi",
+    "\\projet_tsi\\src"
   ],
+  "SelectedNode": "\\projet_tsi\\src\\main.cpp",
   "PreviewInSolutionExplorer": false
 }

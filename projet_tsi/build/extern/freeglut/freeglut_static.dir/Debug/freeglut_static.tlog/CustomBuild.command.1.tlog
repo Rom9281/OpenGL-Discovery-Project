@@ -1,6 +1,6 @@
-^C:\USERS\ROMAI\ONEDRIVE\DOCUMENTS\SCHOOL\4A\TSI\TP\TSI_PROJET\PROJET_TSI\EXTERN\FREEGLUT\CMAKELISTS.TXT
+^U:\2021-2022 (CPE 4A)\TSI\TSI_PROJET\PROJET_TSI\EXTERN\FREEGLUT\CMAKELISTS.TXT
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi -BC:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build --check-stamp-file C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/extern/freeglut/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SU:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi" "-BU:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi/build" --check-stamp-file "U:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi/build/extern/freeglut/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

@@ -53,28 +53,28 @@ set_target_properties(FreeGLUT::freeglut_static PROPERTIES
 set_property(TARGET FreeGLUT::freeglut_static APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(FreeGLUT::freeglut_static PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "C;RC"
-  IMPORTED_LOCATION_DEBUG "C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/extern/freeglut/lib/Debug/freeglut_staticd.lib"
+  IMPORTED_LOCATION_DEBUG "U:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi/build/extern/freeglut/lib/Debug/freeglut_staticd.lib"
   )
 
 # Import target "FreeGLUT::freeglut_static" for configuration "Release"
 set_property(TARGET FreeGLUT::freeglut_static APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(FreeGLUT::freeglut_static PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "C;RC"
-  IMPORTED_LOCATION_RELEASE "C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/extern/freeglut/lib/Release/freeglut_static.lib"
+  IMPORTED_LOCATION_RELEASE "U:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi/build/extern/freeglut/lib/Release/freeglut_static.lib"
   )
 
 # Import target "FreeGLUT::freeglut_static" for configuration "MinSizeRel"
 set_property(TARGET FreeGLUT::freeglut_static APPEND PROPERTY IMPORTED_CONFIGURATIONS MINSIZEREL)
 set_target_properties(FreeGLUT::freeglut_static PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_MINSIZEREL "C;RC"
-  IMPORTED_LOCATION_MINSIZEREL "C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/extern/freeglut/lib/MinSizeRel/freeglut_static.lib"
+  IMPORTED_LOCATION_MINSIZEREL "U:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi/build/extern/freeglut/lib/MinSizeRel/freeglut_static.lib"
   )
 
 # Import target "FreeGLUT::freeglut_static" for configuration "RelWithDebInfo"
 set_property(TARGET FreeGLUT::freeglut_static APPEND PROPERTY IMPORTED_CONFIGURATIONS RELWITHDEBINFO)
 set_target_properties(FreeGLUT::freeglut_static PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELWITHDEBINFO "C;RC"
-  IMPORTED_LOCATION_RELWITHDEBINFO "C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/extern/freeglut/lib/RelWithDebInfo/freeglut_static.lib"
+  IMPORTED_LOCATION_RELWITHDEBINFO "U:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi/build/extern/freeglut/lib/RelWithDebInfo/freeglut_static.lib"
   )
 
 # This file does not depend on other imported targets which have

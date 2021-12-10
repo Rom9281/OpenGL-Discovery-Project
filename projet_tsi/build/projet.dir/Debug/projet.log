@@ -1,10 +1,13 @@
 ﻿  main.cpp
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\src\main.cpp(188,72): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\src\main.cpp(390,20): warning C4305: '+=': truncation from 'double' to 'float'
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\src\main.cpp(396,21): warning C4305: '+=': truncation from 'double' to 'float'
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\src\main.cpp(629,48): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\src\main.cpp(737,65): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\src\main.cpp(738,69): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\src\main.cpp(784,48): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\src\main.cpp(852,48): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-  projet.vcxproj -> C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\Debug\projet.exe
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\src\main.cpp(34,19): warning C4305: 'initialisation' : troncation de 'double' à 'float'
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\src\main.cpp(35,27): warning C4305: 'initialisation' : troncation de 'double' à 'float'
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\src\main.cpp(41,25): warning C4305: 'initialisation' : troncation de 'double' à 'float'
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\src\main.cpp(56,74): warning C4305: 'argument' : troncation de 'double' à 'float'
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\src\main.cpp(156,74): warning C4244: '+=' : conversion de 'double' en 'float', perte possible de données
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\src\main.cpp(365,45): warning C4267: '=' : conversion de 'size_t' en 'GLuint', perte possible de données
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\src\main.cpp(375,15): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\src\main.cpp(376,15): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\src\main.cpp(446,65): warning C4305: 'argument' : troncation de 'double' à 'float'
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\src\main.cpp(447,60): warning C4305: 'argument' : troncation de 'double' à 'float'
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\src\main.cpp(455,45): warning C4267: '=' : conversion de 'size_t' en 'GLuint', perte possible de données
+  projet.vcxproj -> U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\build\Debug\projet.exe

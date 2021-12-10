@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi
+# Install script for directory: U:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,9 +34,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/extern/glew/cmake_install.cmake")
-  include("C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/extern/freeglut/cmake_install.cmake")
-  include("C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/tools/cmake_install.cmake")
+  include("U:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi/build/extern/glew/cmake_install.cmake")
+  include("U:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi/build/extern/freeglut/cmake_install.cmake")
+  include("U:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi/build/tools/cmake_install.cmake")
 
 endif()
 
@@ -48,5 +48,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "U:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

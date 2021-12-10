@@ -13,7 +13,9 @@ GLuint gui_program_id;
 
 camera cam;
 
-const int nb_obj = 3;
+const int nb_steg = 50; //nombre de stégosaures à générer
+
+const int nb_obj = 3+nb_steg;
 objet3d obj[nb_obj];
 
 const int nb_text = 2;
@@ -366,6 +368,15 @@ void init_model_1()
   obj[0].prog = shader_program_id;
 
   obj[0].tr.translation = vec3(-2.0, 0.0, -10.0);
+
+  //Génération de plusieurs stégosaures
+  for (int i = 3; i < nb_steg + 3; ++i) {
+      obj[i] = obj[0];
+      float x = rand() % 100; //coordonnées de spawn du stégosaure
+      float z = rand() % 100;
+      obj[i].tr.translation = vec3(x/100 * i, 0.0f, -10 + z/100 * i);
+
+  }
 }
 
 void init_model_2()
@@ -448,5 +459,6 @@ void init_model_3()
   obj[2].prog = shader_program_id;
 
   obj[2].tr.translation = vec3(2.0, 0.0, -10.0);
+
 }
 

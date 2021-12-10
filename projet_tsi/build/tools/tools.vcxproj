@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{0403F85E-0D7F-3D7D-8441-AE8DB3BDEF5C}</ProjectGuid>
+    <ProjectGuid>{6166CCD4-46EE-3DE7-B8E5-0BE9EEBE8A20}</ProjectGuid>
     <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
@@ -59,26 +59,26 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\tools\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\build\tools\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tools.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tools</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\tools\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\build\tools\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tools.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tools</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\tools\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\build\tools\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">tools.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">tools</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\tools\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\build\tools\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">tools.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">tools</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\extern\glew\include;C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\extern\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\extern\glew\include;U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\extern\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -95,10 +95,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\extern\glew\include;C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\extern\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\extern\glew\include;U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\extern\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\extern\glew\include;C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\extern\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\extern\glew\include;U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\extern\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -111,7 +111,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\extern\glew\include;C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\extern\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\extern\glew\include;U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\extern\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -128,10 +128,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\extern\glew\include;C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\extern\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\extern\glew\include;U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\extern\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\extern\glew\include;C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\extern\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\extern\glew\include;U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\extern\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -144,7 +144,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\extern\glew\include;C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\extern\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\extern\glew\include;U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\extern\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
@@ -161,10 +161,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\extern\glew\include;C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\extern\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\extern\glew\include;U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\extern\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\extern\glew\include;C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\extern\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\extern\glew\include;U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\extern\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -177,7 +177,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\extern\glew\include;C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\extern\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\extern\glew\include;U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\extern\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -193,10 +193,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\extern\glew\include;C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\extern\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\extern\glew\include;U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\extern\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\extern\glew\include;C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\extern\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\extern\glew\include;U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\extern\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -208,11 +208,11 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\CMakeLists.txt">
+    <CustomBuild Include="U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/tools/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule U:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi/tools/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi -BC:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build --check-stamp-file C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/tools/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SU:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi" "-BU:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi/build" --check-stamp-file "U:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi/build/tools/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -221,11 +221,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\tools\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\build\tools\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/tools/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule U:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi/tools/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi -BC:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build --check-stamp-file C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/tools/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SU:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi" "-BU:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi/build" --check-stamp-file "U:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi/build/tools/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -234,11 +234,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\tools\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\build\tools\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/tools/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule U:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi/tools/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi -BC:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build --check-stamp-file C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/tools/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SU:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi" "-BU:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi/build" --check-stamp-file "U:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi/build/tools/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -247,11 +247,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\tools\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\build\tools\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/tools/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule U:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi/tools/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi -BC:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build --check-stamp-file C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/tools/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SU:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi" "-BU:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi/build" --check-stamp-file "U:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi/build/tools/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -260,36 +260,36 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\tools\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\build\tools\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\format\mesh_io_obj.cpp" />
-    <ClCompile Include="C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\format\mesh_io_off.cpp" />
-    <ClCompile Include="C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\glhelper.cpp" />
-    <ClCompile Include="C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\mat4.cpp" />
-    <ClCompile Include="C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\mesh.cpp" />
-    <ClCompile Include="C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\tga.cpp" />
-    <ClCompile Include="C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\triangle_index.cpp" />
-    <ClCompile Include="C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\vec2.cpp" />
-    <ClCompile Include="C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\vec3.cpp" />
-    <ClCompile Include="C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\vertex_opengl.cpp" />
-    <ClInclude Include="C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\format\mesh_io_obj.hpp" />
-    <ClInclude Include="C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\format\mesh_io_off.hpp" />
-    <ClInclude Include="C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\glhelper.hpp" />
-    <ClInclude Include="C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\image.hpp" />
-    <ClInclude Include="C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\mat4.hpp" />
-    <ClInclude Include="C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\mesh.hpp" />
-    <ClInclude Include="C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\stb_image.h" />
-    <ClInclude Include="C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\triangle_index.hpp" />
-    <ClInclude Include="C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\vec2.hpp" />
-    <ClInclude Include="C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\vec3.hpp" />
-    <ClInclude Include="C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\vertex_opengl.hpp" />
+    <ClCompile Include="U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\format\mesh_io_obj.cpp" />
+    <ClCompile Include="U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\format\mesh_io_off.cpp" />
+    <ClCompile Include="U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\glhelper.cpp" />
+    <ClCompile Include="U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\mat4.cpp" />
+    <ClCompile Include="U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\mesh.cpp" />
+    <ClCompile Include="U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\tga.cpp" />
+    <ClCompile Include="U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\triangle_index.cpp" />
+    <ClCompile Include="U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\vec2.cpp" />
+    <ClCompile Include="U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\vec3.cpp" />
+    <ClCompile Include="U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\vertex_opengl.cpp" />
+    <ClInclude Include="U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\format\mesh_io_obj.hpp" />
+    <ClInclude Include="U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\format\mesh_io_off.hpp" />
+    <ClInclude Include="U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\glhelper.hpp" />
+    <ClInclude Include="U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\image.hpp" />
+    <ClInclude Include="U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\mat4.hpp" />
+    <ClInclude Include="U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\mesh.hpp" />
+    <ClInclude Include="U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\stb_image.h" />
+    <ClInclude Include="U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\triangle_index.hpp" />
+    <ClInclude Include="U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\vec2.hpp" />
+    <ClInclude Include="U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\vec3.hpp" />
+    <ClInclude Include="U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\vertex_opengl.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\ZERO_CHECK.vcxproj">
-      <Project>{9872B817-3D6F-3136-9C6A-2E07507CA633}</Project>
+    <ProjectReference Include="U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\build\ZERO_CHECK.vcxproj">
+      <Project>{07A031FC-C903-3F80-A9AA-D2990D5B6F4C}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

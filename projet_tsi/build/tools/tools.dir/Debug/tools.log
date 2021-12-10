@@ -1,45 +1,45 @@
-﻿  Building Custom Rule C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/tools/CMakeLists.txt
+﻿  Building Custom Rule U:/2021-2022 (CPE 4A)/TSI/TSI_projet/projet_tsi/tools/CMakeLists.txt
   mesh_io_obj.cpp
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\format\../mesh.hpp(14,1): warning C4099: 'mesh': type name first seen using 'class' now seen using 'struct'
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\format\../mesh.hpp(13): message : see declaration of 'mesh'
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\format\mesh_io_obj.cpp(99,5): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\format\mesh_io_obj.cpp(102,40): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\format\mesh_io_obj.cpp(102,40): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\format\mesh_io_obj.cpp(196,51): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\format\mesh_io_obj.cpp(196,51): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\format\mesh_io_obj.cpp(200,37): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\format\mesh_io_obj.cpp(200,37): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\format\mesh_io_obj.cpp(207,48): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\format\mesh_io_obj.cpp(207,48): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\format\mesh_io_obj.cpp(221,51): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\format\mesh_io_obj.cpp(221,51): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\format\mesh_io_obj.cpp(228,41): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\format\mesh_io_obj.cpp(228,41): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\format\../mesh.hpp(14,1): warning C4099: 'mesh' : nom de type déjà rencontré avec 'class' et utilisant maintenant 'struct'
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\format\../mesh.hpp(13): message : voir la déclaration de 'mesh'
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\format\mesh_io_obj.cpp(99,5): warning C4267: 'initialisation' : conversion de 'size_t' en 'int', perte possible de données
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\format\mesh_io_obj.cpp(102,40): warning C4267: 'initialisation' : conversion de 'size_t' en 'int', perte possible de données
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\format\mesh_io_obj.cpp(102,40): warning C4267: 'initialisation' : conversion de 'size_t' en 'const int', perte possible de données
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\format\mesh_io_obj.cpp(196,51): warning C4267: 'initialisation' : conversion de 'size_t' en 'int', perte possible de données
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\format\mesh_io_obj.cpp(196,51): warning C4267: 'initialisation' : conversion de 'size_t' en 'const int', perte possible de données
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\format\mesh_io_obj.cpp(200,37): warning C4267: 'initialisation' : conversion de 'size_t' en 'int', perte possible de données
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\format\mesh_io_obj.cpp(200,37): warning C4267: 'initialisation' : conversion de 'size_t' en 'const int', perte possible de données
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\format\mesh_io_obj.cpp(207,48): warning C4267: 'initialisation' : conversion de 'size_t' en 'int', perte possible de données
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\format\mesh_io_obj.cpp(207,48): warning C4267: 'initialisation' : conversion de 'size_t' en 'const int', perte possible de données
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\format\mesh_io_obj.cpp(221,51): warning C4267: 'initialisation' : conversion de 'size_t' en 'int', perte possible de données
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\format\mesh_io_obj.cpp(221,51): warning C4267: 'initialisation' : conversion de 'size_t' en 'const int', perte possible de données
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\format\mesh_io_obj.cpp(228,41): warning C4267: 'initialisation' : conversion de 'size_t' en 'int', perte possible de données
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\format\mesh_io_obj.cpp(228,41): warning C4267: 'initialisation' : conversion de 'size_t' en 'const int', perte possible de données
   mesh_io_off.cpp
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\format\../mesh.hpp(14,1): warning C4099: 'mesh': type name first seen using 'class' now seen using 'struct'
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\format\../mesh.hpp(13): message : see declaration of 'mesh'
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\format\mesh_io_off.cpp(96,5): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\format\mesh_io_off.cpp(104,5): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\format\../mesh.hpp(14,1): warning C4099: 'mesh' : nom de type déjà rencontré avec 'class' et utilisant maintenant 'struct'
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\format\../mesh.hpp(13): message : voir la déclaration de 'mesh'
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\format\mesh_io_off.cpp(96,5): warning C4267: 'initialisation' : conversion de 'size_t' en 'int', perte possible de données
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\format\mesh_io_off.cpp(104,5): warning C4267: 'initialisation' : conversion de 'size_t' en 'int', perte possible de données
   glhelper.cpp
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\glhelper.cpp(143,86): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\glhelper.cpp(143,86): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   mat4.cpp
   mesh.cpp
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\format/mesh_io_obj.hpp(28,11): warning C4099: 'mesh': type name first seen using 'struct' now seen using 'class'
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\mesh.hpp(13): message : see declaration of 'mesh'
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\format/mesh_io_off.hpp(26,11): warning C4099: 'mesh': type name first seen using 'struct' now seen using 'class'
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\format/mesh_io_obj.hpp(28): message : see declaration of 'mesh'
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\mesh.cpp(38,3): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\mesh.cpp(49,3): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\mesh.cpp(64,3): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\mesh.cpp(78,3): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\mesh.cpp(83,3): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\mesh.cpp(92,3): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\mesh.cpp(101,3): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\tools\mesh.cpp(110,3): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\format/mesh_io_obj.hpp(28,11): warning C4099: 'mesh' : nom de type déjà rencontré avec 'struct' et utilisant maintenant 'class'
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\mesh.hpp(13): message : voir la déclaration de 'mesh'
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\format/mesh_io_off.hpp(26,11): warning C4099: 'mesh' : nom de type déjà rencontré avec 'struct' et utilisant maintenant 'class'
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\format/mesh_io_obj.hpp(28): message : voir la déclaration de 'mesh'
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\mesh.cpp(38,3): warning C4267: 'initialisation' : conversion de 'size_t' en 'unsigned int', perte possible de données
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\mesh.cpp(49,3): warning C4267: 'initialisation' : conversion de 'size_t' en 'unsigned int', perte possible de données
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\mesh.cpp(64,3): warning C4267: 'initialisation' : conversion de 'size_t' en 'unsigned int', perte possible de données
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\mesh.cpp(78,3): warning C4267: 'initialisation' : conversion de 'size_t' en 'unsigned int', perte possible de données
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\mesh.cpp(83,3): warning C4267: 'initialisation' : conversion de 'size_t' en 'unsigned int', perte possible de données
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\mesh.cpp(92,3): warning C4267: 'initialisation' : conversion de 'size_t' en 'unsigned int', perte possible de données
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\mesh.cpp(101,3): warning C4267: 'initialisation' : conversion de 'size_t' en 'unsigned int', perte possible de données
+U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\tools\mesh.cpp(110,3): warning C4267: 'initialisation' : conversion de 'size_t' en 'unsigned int', perte possible de données
   tga.cpp
   triangle_index.cpp
   vec2.cpp
   vec3.cpp
   vertex_opengl.cpp
-  Generating Code...
-  tools.vcxproj -> C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\tools\Debug\tools.lib
+  Génération de code en cours...
+  tools.vcxproj -> U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\build\tools\Debug\tools.lib

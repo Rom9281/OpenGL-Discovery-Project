@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\CMakeFiles\227f97a0d80bfd47311e20686cf7b666\INSTALL_force.rule">
+    <CustomBuild Include="U:\2021-2022 (CPE 4A)\TSI\TSI_projet\projet_tsi\build\CMakeFiles\c0eb63c4292df49df46daf10d395243d\INSTALL_force.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{C7B6DBDB-8498-3B76-AA56-79CB5E984505}</UniqueIdentifier>
+      <UniqueIdentifier>{6E820164-48BA-312E-9137-9E1CC9CCE064}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
