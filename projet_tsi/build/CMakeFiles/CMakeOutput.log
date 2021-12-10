@@ -9,7 +9,7 @@ The output was:
 Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 09/12/2021 14:48:16.
+Build started 10/12/2021 15:11:21.
 Project "C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\CMakeFiles\3.22.1\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
 PrepareForBuild:
   Creating directory "Debug\".
@@ -35,7 +35,7 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:02.02
+Time Elapsed 00:00:02.76
 
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -47,14 +47,14 @@ The CXX compiler identification is MSVC, found in "C:/Users/romai/OneDrive/Docum
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_28c64.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_2e80b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
 Copyright (C) Microsoft Corporation. All rights reserved.
 
   Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30706 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   CMakeCXXCompilerABI.cpp
-  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_28c64.dir\Debug\\" /Fd"cmTC_28c64.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp"
-  cmTC_28c64.vcxproj -> C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\CMakeFiles\CMakeTmp\Debug\cmTC_28c64.exe
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_2e80b.dir\Debug\\" /Fd"cmTC_2e80b.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp"
+  cmTC_2e80b.vcxproj -> C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\CMakeFiles\CMakeTmp\Debug\cmTC_2e80b.exe
 
 
 
@@ -68,7 +68,7 @@ The output was:
 Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 09/12/2021 14:48:22.
+Build started 10/12/2021 15:11:29.
 Project "C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\CMakeFiles\3.22.1\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
 PrepareForBuild:
   Creating directory "Debug\".
@@ -94,7 +94,7 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.69
+Time Elapsed 00:00:02.36
 
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -106,84 +106,84 @@ The C compiler identification is MSVC, found in "C:/Users/romai/OneDrive/Documen
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_86422.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_b7bc2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
 Copyright (C) Microsoft Corporation. All rights reserved.
 
   Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30706 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b7bc2.dir\Debug\\" /Fd"cmTC_b7bc2.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompilerABI.c"
   CMakeCCompilerABI.c
-  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_86422.dir\Debug\\" /Fd"cmTC_86422.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompilerABI.c"
-  cmTC_86422.vcxproj -> C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\CMakeFiles\CMakeTmp\Debug\cmTC_86422.exe
+  cmTC_b7bc2.vcxproj -> C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\CMakeFiles\CMakeTmp\Debug\cmTC_b7bc2.exe
 
 
 
 Determining if files sys/types.h exist passed with the following output:
 Change Dir: C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_6188d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_76718.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
 Copyright (C) Microsoft Corporation. All rights reserved.
 
   Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30706 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
-  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6188d.dir\Debug\\" /Fd"cmTC_6188d.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TYPES_H.c
   HAVE_SYS_TYPES_H.c
-  cmTC_6188d.vcxproj -> C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\CMakeFiles\CMakeTmp\Debug\cmTC_6188d.exe
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_76718.dir\Debug\\" /Fd"cmTC_76718.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TYPES_H.c
+  cmTC_76718.vcxproj -> C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\CMakeFiles\CMakeTmp\Debug\cmTC_76718.exe
 
 
 
 Determining if files stdbool.h exist passed with the following output:
 Change Dir: C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_2ccf0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_81789.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
 Copyright (C) Microsoft Corporation. All rights reserved.
 
   Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30706 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
-  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2ccf0.dir\Debug\\" /Fd"cmTC_2ccf0.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\CMakeFiles\CheckIncludeFiles\HAVE_STDBOOL_H.c
   HAVE_STDBOOL_H.c
-  cmTC_2ccf0.vcxproj -> C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\CMakeFiles\CMakeTmp\Debug\cmTC_2ccf0.exe
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_81789.dir\Debug\\" /Fd"cmTC_81789.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\CMakeFiles\CheckIncludeFiles\HAVE_STDBOOL_H.c
+  cmTC_81789.vcxproj -> C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\CMakeFiles\CMakeTmp\Debug\cmTC_81789.exe
 
 
 
 Determining if files fcntl.h exist passed with the following output:
 Change Dir: C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_be6dc.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_d5e0b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
 Copyright (C) Microsoft Corporation. All rights reserved.
 
   Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30706 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d5e0b.dir\Debug\\" /Fd"cmTC_d5e0b.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\CMakeFiles\CheckIncludeFiles\HAVE_FCNTL_H.c
   HAVE_FCNTL_H.c
-  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_be6dc.dir\Debug\\" /Fd"cmTC_be6dc.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\CMakeFiles\CheckIncludeFiles\HAVE_FCNTL_H.c
-  cmTC_be6dc.vcxproj -> C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\CMakeFiles\CMakeTmp\Debug\cmTC_be6dc.exe
+  cmTC_d5e0b.vcxproj -> C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\CMakeFiles\CMakeTmp\Debug\cmTC_d5e0b.exe
 
 
 
 Determining if files stdint.h exist passed with the following output:
 Change Dir: C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_c3651.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_280e3.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
 Copyright (C) Microsoft Corporation. All rights reserved.
 
   Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30706 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   HAVE_STDINT_H.c
-  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c3651.dir\Debug\\" /Fd"cmTC_c3651.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\CMakeFiles\CheckIncludeFiles\HAVE_STDINT_H.c
-  cmTC_c3651.vcxproj -> C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\CMakeFiles\CMakeTmp\Debug\cmTC_c3651.exe
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_280e3.dir\Debug\\" /Fd"cmTC_280e3.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\CMakeFiles\CheckIncludeFiles\HAVE_STDINT_H.c
+  cmTC_280e3.vcxproj -> C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\CMakeFiles\CMakeTmp\Debug\cmTC_280e3.exe
 
 
 
 Determining if files inttypes.h exist passed with the following output:
 Change Dir: C:/Users/romai/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_ad0f6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_97949.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.0.0+c9eb9dd64 for .NET Framework
 Copyright (C) Microsoft Corporation. All rights reserved.
 
   Microsoft (R) C/C++ Optimizing Compiler Version 19.30.30706 for x64
-  Copyright (C) Microsoft Corporation.  All rights reserved.
   HAVE_INTTYPES_H.c
-  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ad0f6.dir\Debug\\" /Fd"cmTC_ad0f6.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\CMakeFiles\CheckIncludeFiles\HAVE_INTTYPES_H.c
-  cmTC_ad0f6.vcxproj -> C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\CMakeFiles\CMakeTmp\Debug\cmTC_ad0f6.exe
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_97949.dir\Debug\\" /Fd"cmTC_97949.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\CMakeFiles\CheckIncludeFiles\HAVE_INTTYPES_H.c
+  cmTC_97949.vcxproj -> C:\Users\romai\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\build\CMakeFiles\CMakeTmp\Debug\cmTC_97949.exe
 
 
 
