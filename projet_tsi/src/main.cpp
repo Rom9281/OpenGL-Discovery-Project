@@ -30,12 +30,13 @@ bool jump_enable = true;
 float jump_time_0 = 0.000000000; // first moment of the jump
 float jump_time = 0.00000000000; //
 float g = 9.810000;
-float jump_speed = 0.30000;
+float jump_speed = 0.80000;
 //____________________________________________________
 
 // Gestion du temps
 // ___________________________________________________
 float timer = 0;
+float time_step = 0.0025;
 // ___________________________________________________
 
 
@@ -144,7 +145,7 @@ static void special_callback(int key, int, int)
 \*****************************************************************************/
 static void timer_callback(int)
 {
-    timer += 0.001;
+    timer += time_step;
 
     if (jump_flag) {
         jump_time = timer - jump_time_0;

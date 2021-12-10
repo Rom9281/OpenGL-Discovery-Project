@@ -1,0 +1,113 @@
+Determining if files unistd.h exist failed with the following output:
+Change Dir: C:/Users/Romain/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_20a3d && [1/2] Building C object CMakeFiles\cmTC_20a3d.dir\HAVE_UNISTD_H.c.obj
+FAILED: CMakeFiles/cmTC_20a3d.dir/HAVE_UNISTD_H.c.obj 
+"C:\PROGRA~2\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\Hostx64\x64\cl.exe"  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\cmTC_20a3d.dir\HAVE_UNISTD_H.c.obj /FdCMakeFiles\cmTC_20a3d.dir\ /FS -c C:\Users\Romain\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\out\build\x64-Debug\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c
+C:\Users\Romain\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\out\build\x64-Debug\CMakeFiles\CheckIncludeFiles\HAVE_UNISTD_H.c(2): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <unistd.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/time.h exist failed with the following output:
+Change Dir: C:/Users/Romain/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_21439 && [1/2] Building C object CMakeFiles\cmTC_21439.dir\HAVE_SYS_TIME_H.c.obj
+FAILED: CMakeFiles/cmTC_21439.dir/HAVE_SYS_TIME_H.c.obj 
+"C:\PROGRA~2\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\Hostx64\x64\cl.exe"  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\cmTC_21439.dir\HAVE_SYS_TIME_H.c.obj /FdCMakeFiles\cmTC_21439.dir\ /FS -c C:\Users\Romain\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\out\build\x64-Debug\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIME_H.c
+C:\Users\Romain\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\out\build\x64-Debug\CMakeFiles\CheckIncludeFiles\HAVE_SYS_TIME_H.c(2): fatal error C1083: Cannot open include file: 'sys/time.h': No such file or directory
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <sys/time.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/param.h exist failed with the following output:
+Change Dir: C:/Users/Romain/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_3d5b9 && [1/2] Building C object CMakeFiles\cmTC_3d5b9.dir\HAVE_SYS_PARAM_H.c.obj
+FAILED: CMakeFiles/cmTC_3d5b9.dir/HAVE_SYS_PARAM_H.c.obj 
+"C:\PROGRA~2\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\Hostx64\x64\cl.exe"  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\cmTC_3d5b9.dir\HAVE_SYS_PARAM_H.c.obj /FdCMakeFiles\cmTC_3d5b9.dir\ /FS -c C:\Users\Romain\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\out\build\x64-Debug\CMakeFiles\CheckIncludeFiles\HAVE_SYS_PARAM_H.c
+C:\Users\Romain\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\out\build\x64-Debug\CMakeFiles\CheckIncludeFiles\HAVE_SYS_PARAM_H.c(2): fatal error C1083: Cannot open include file: 'sys/param.h': No such file or directory
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <sys/param.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/ioctl.h exist failed with the following output:
+Change Dir: C:/Users/Romain/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_98a9e && [1/2] Building C object CMakeFiles\cmTC_98a9e.dir\HAVE_SYS_IOCTL_H.c.obj
+FAILED: CMakeFiles/cmTC_98a9e.dir/HAVE_SYS_IOCTL_H.c.obj 
+"C:\PROGRA~2\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\Hostx64\x64\cl.exe"  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\cmTC_98a9e.dir\HAVE_SYS_IOCTL_H.c.obj /FdCMakeFiles\cmTC_98a9e.dir\ /FS -c C:\Users\Romain\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\out\build\x64-Debug\CMakeFiles\CheckIncludeFiles\HAVE_SYS_IOCTL_H.c
+C:\Users\Romain\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\out\build\x64-Debug\CMakeFiles\CheckIncludeFiles\HAVE_SYS_IOCTL_H.c(2): fatal error C1083: Cannot open include file: 'sys/ioctl.h': No such file or directory
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <sys/ioctl.h>
+
+
+int main(void){return 0;}
+
+Determining if files usbhid.h exist failed with the following output:
+Change Dir: C:/Users/Romain/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_892ab && [1/2] Building C object CMakeFiles\cmTC_892ab.dir\HAVE_USBHID_H.c.obj
+FAILED: CMakeFiles/cmTC_892ab.dir/HAVE_USBHID_H.c.obj 
+"C:\PROGRA~2\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\Hostx64\x64\cl.exe"  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\cmTC_892ab.dir\HAVE_USBHID_H.c.obj /FdCMakeFiles\cmTC_892ab.dir\ /FS -c C:\Users\Romain\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\out\build\x64-Debug\CMakeFiles\CheckIncludeFiles\HAVE_USBHID_H.c
+C:\Users\Romain\OneDrive\Documents\School\4A\TSI\TP\TSI_projet\projet_tsi\out\build\x64-Debug\CMakeFiles\CheckIncludeFiles\HAVE_USBHID_H.c(2): fatal error C1083: Cannot open include file: 'usbhid.h': No such file or directory
+ninja: build stopped: subcommand failed.
+
+
+Source:
+/* */
+#include <usbhid.h>
+
+
+int main(void){return 0;}
+
+Determining if the function gettimeofday exists failed with the following output:
+Change Dir: C:/Users/Romain/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_d50cb && [1/2] Building C object CMakeFiles\cmTC_d50cb.dir\CheckFunctionExists.c.obj
+[2/2] Linking C executable cmTC_d50cb.exe
+FAILED: cmTC_d50cb.exe 
+cmd.exe /C "cd . && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_d50cb.dir --rc="C:\PROGRA~2\Windows Kits\10\bin\10.0.18362.0\x64\rc.exe" --mt="C:\PROGRA~2\Windows Kits\10\bin\10.0.18362.0\x64\mt.exe" --manifests  -- "C:\PROGRA~2\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\Hostx64\x64\link.exe" /nologo CMakeFiles\cmTC_d50cb.dir\CheckFunctionExists.c.obj  /out:cmTC_d50cb.exe /implib:cmTC_d50cb.lib /pdb:cmTC_d50cb.pdb /version:0.0  /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+LINK Pass 1: command "C:\PROGRA~2\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\Hostx64\x64\link.exe /nologo CMakeFiles\cmTC_d50cb.dir\CheckFunctionExists.c.obj /out:cmTC_d50cb.exe /implib:cmTC_d50cb.lib /pdb:cmTC_d50cb.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_d50cb.dir/intermediate.manifest CMakeFiles\cmTC_d50cb.dir/manifest.res" failed (exit code 1120) with the following output:
+CheckFunctionExists.c.obj : error LNK2019: unresolved external symbol gettimeofday referenced in function main
+cmTC_d50cb.exe : fatal error LNK1120: 1 unresolved externals
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function XParseGeometry exists failed with the following output:
+Change Dir: C:/Users/Romain/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_1c0cc && [1/2] Building C object CMakeFiles\cmTC_1c0cc.dir\CheckFunctionExists.c.obj
+[2/2] Linking C executable cmTC_1c0cc.exe
+FAILED: cmTC_1c0cc.exe 
+cmd.exe /C "cd . && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_1c0cc.dir --rc="C:\PROGRA~2\Windows Kits\10\bin\10.0.18362.0\x64\rc.exe" --mt="C:\PROGRA~2\Windows Kits\10\bin\10.0.18362.0\x64\mt.exe" --manifests  -- "C:\PROGRA~2\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\Hostx64\x64\link.exe" /nologo CMakeFiles\cmTC_1c0cc.dir\CheckFunctionExists.c.obj  /out:cmTC_1c0cc.exe /implib:cmTC_1c0cc.lib /pdb:cmTC_1c0cc.pdb /version:0.0  /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+LINK Pass 1: command "C:\PROGRA~2\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\Hostx64\x64\link.exe /nologo CMakeFiles\cmTC_1c0cc.dir\CheckFunctionExists.c.obj /out:cmTC_1c0cc.exe /implib:cmTC_1c0cc.lib /pdb:cmTC_1c0cc.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_1c0cc.dir/intermediate.manifest CMakeFiles\cmTC_1c0cc.dir/manifest.res" failed (exit code 1120) with the following output:
+CheckFunctionExists.c.obj : error LNK2019: unresolved external symbol XParseGeometry referenced in function main
+cmTC_1c0cc.exe : fatal error LNK1120: 1 unresolved externals
+ninja: build stopped: subcommand failed.
+
+
+

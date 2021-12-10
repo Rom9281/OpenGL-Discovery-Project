@@ -1,0 +1,121 @@
+The system is: Windows - 10.0.19042 - AMD64
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/bin/HostX64/x64/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) C/C++ Optimizing Compiler Version 19.25.28610.4 for x64
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+CMakeCXXCompilerId.cpp
+Microsoft (R) Incremental Linker Version 14.25.28610.4
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCXXCompilerId.exe 
+CMakeCXXCompilerId.obj 
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+
+The CXX compiler identification is MSVC, found in "C:/Users/Romain/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/out/build/x64-Debug/CMakeFiles/3.16.19112601-MSVC_2/CompilerIdCXX/CMakeCXXCompilerId.exe"
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/Users/Romain/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_9fb75 && [1/2] Building CXX object CMakeFiles\cmTC_9fb75.dir\testCXXCompiler.cxx.obj
+[2/2] Linking CXX executable cmTC_9fb75.exe
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/Users/Romain/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_a037d && [1/2] Building CXX object CMakeFiles\cmTC_a037d.dir\CMakeCXXCompilerABI.cpp.obj
+[2/2] Linking CXX executable cmTC_a037d.exe
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.25.28610/bin/Hostx64/x64/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) C/C++ Optimizing Compiler Version 19.25.28610.4 for x64
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+CMakeCCompilerId.c
+Microsoft (R) Incremental Linker Version 14.25.28610.4
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCCompilerId.exe 
+CMakeCCompilerId.obj 
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+
+The C compiler identification is MSVC, found in "C:/Users/Romain/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/out/build/x64-Debug/CMakeFiles/3.16.19112601-MSVC_2/CompilerIdC/CMakeCCompilerId.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/Users/Romain/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_c3530 && [1/2] Building C object CMakeFiles\cmTC_c3530.dir\testCCompiler.c.obj
+[2/2] Linking C executable cmTC_c3530.exe
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/Users/Romain/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_f6cd6 && [1/2] Building C object CMakeFiles\cmTC_f6cd6.dir\CMakeCCompilerABI.c.obj
+[2/2] Linking C executable cmTC_f6cd6.exe
+
+
+
+Determining if files sys/types.h exist passed with the following output:
+Change Dir: C:/Users/Romain/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_7bd79 && [1/2] Building C object CMakeFiles\cmTC_7bd79.dir\HAVE_SYS_TYPES_H.c.obj
+[2/2] Linking C executable cmTC_7bd79.exe
+
+
+
+Determining if files stdbool.h exist passed with the following output:
+Change Dir: C:/Users/Romain/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_22dfe && [1/2] Building C object CMakeFiles\cmTC_22dfe.dir\HAVE_STDBOOL_H.c.obj
+[2/2] Linking C executable cmTC_22dfe.exe
+
+
+
+Determining if files fcntl.h exist passed with the following output:
+Change Dir: C:/Users/Romain/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_8080a && [1/2] Building C object CMakeFiles\cmTC_8080a.dir\HAVE_FCNTL_H.c.obj
+[2/2] Linking C executable cmTC_8080a.exe
+
+
+
+Determining if files stdint.h exist passed with the following output:
+Change Dir: C:/Users/Romain/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_a8a49 && [1/2] Building C object CMakeFiles\cmTC_a8a49.dir\HAVE_STDINT_H.c.obj
+[2/2] Linking C executable cmTC_a8a49.exe
+
+
+
+Determining if files inttypes.h exist passed with the following output:
+Change Dir: C:/Users/Romain/OneDrive/Documents/School/4A/TSI/TP/TSI_projet/projet_tsi/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_0fe29 && [1/2] Building C object CMakeFiles\cmTC_0fe29.dir\HAVE_INTTYPES_H.c.obj
+[2/2] Linking C executable cmTC_0fe29.exe
+
+
+
