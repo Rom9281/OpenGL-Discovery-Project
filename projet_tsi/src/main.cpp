@@ -13,13 +13,16 @@ GLuint gui_program_id;
 
 camera cam;
 
-const int nb_steg = 50; //nombre de stégosaures à générer
+const int nb_steg = 15; //nombre de stégosaures à générer
 
 const int nb_obj = 3+nb_steg;
 objet3d obj[nb_obj];
 
 const int nb_text = 2;
 text text_to_draw[nb_text];
+
+long double angle_precedent = 0; //angle de rotation initial des stégosaures
+long double angle;
 
 // Variables supplémentaire
 // **************************************************************************
@@ -165,6 +168,34 @@ static void timer_callback(int)
     }
     glutTimerFunc(25, timer_callback, 0);
     glutPostRedisplay();
+
+    //gestion de la direction des stégosaures
+    for (int i = 3; i < nb_steg + 3; ++i) {
+
+        float xs = obj[i].tr.translation.x; //coordonnées du stégosaure
+        float zs = obj[i].tr.translation.z;
+
+        float xm = obj[2].tr.translation.x; //coordonnées du monstre
+        float zm = obj[2].tr.translation.z;
+
+        //calcul de l'angle de rotation des stégosaures
+        if ((xm - xs > 0)) {
+            angle = -atan((zm - zs) / (xm - xs)) + M_PI/2;
+        }
+        else {
+            angle = -atan((zm - zs) / (xm - xs)) + 3*M_PI / 2;
+        }
+
+        //printf("zm-zs = %f\t xm-xs = %f\n", (zm - zs, xm - xs));
+
+        obj[i].tr.rotation_center = vec3(0.0f, 0.0f, 0.0f); //on place le centre de rotation sur le stégosaure
+        obj[i].tr.rotation_euler = vec3(0.0F, angle, 0.0f); //on pointe le stégosaure vers le monstre
+
+        //obj[i].tr.rotation_euler.y += 0.05f; //mode disco
+
+        angle_precedent = angle; //valeur tampon pour étudier l'évolution de l'angle de rotation
+
+    }
 }
 
 /*****************************************************************************\
@@ -375,7 +406,7 @@ void init_model_1()
       float x = rand() % 100; //coordonnées de spawn du stégosaure
       float z = rand() % 100;
       obj[i].tr.translation = vec3(x/100 * i, 0.0f, -10 + z/100 * i);
-
+      
   }
 }
 
