@@ -5,6 +5,7 @@
  * Programme principal des appels OpenGL
  \*****************************************************************************/
 
+
 #include "declaration.h"
 
 //identifiant des shaders
@@ -22,8 +23,21 @@ text text_to_draw[nb_text];
 // Variables supplémentaire
 // **************************************************************************
 
+// I. Physique du personnage
+// __________________________________________________
+
+// 1. Deplacements
+float vect_acceleration[3] = { 0.0,0.0,0.0 }; // vecteur d'acceleration
+float vect_vitesse[3] = { 0.0,0.0,0.0 }; // vecteur de vitesse
+enum coordonnés {X,Y,Z};
+
+// 2. Caractéristiques
+float masse = 200.0;
+
+
 // Gestion du saut
 // __________________________________________________
+
 bool jump_flag = false;
 bool jump_enable = true;
 
@@ -36,6 +50,7 @@ float jump_speed = 0.50000;
 //____________________________________________________
 enum directions {UP,DOWN,LEFT,RIGHT};
 bool move[] = {false,false,false,false};
+bool move_enable = true;
 
 // Gestion du temps
 // ___________________________________________________
@@ -47,16 +62,40 @@ float time_step = 0.0025;
 float rayon_collision = 1.0;
 
 bool collision_flag = false;
+bool collision_enable = true;
 
 float collision_time_0 = 0.000000000; // first moment of the jump
 float collision_time = 0.00000000000; //
 
+
+// AJOUTS DE FONCTIONS
 // **************************************************************************
 
 float norm2point(objet3d objet1, objet3d objet2) {
     return sqrt((objet2.tr.translation.x - objet1.tr.translation.x )*(objet2.tr.translation.x - objet1.tr.translation.x)+(objet2.tr.translation.y - objet1.tr.translation.y)*(objet2.tr.translation.y - objet1.tr.translation.y) + (objet2.tr.translation.z - objet1.tr.translation.z)*(objet2.tr.translation.z - objet1.tr.translation.z));
 }
 
+
+// Fonction de calcul de vecteur normé entre deux objets
+float getNorm(char choix, objet3d objet1, objet3d objet2) {
+    float valren = 0.0;
+    switch (choix) {
+    case 'X':
+        valren = (objet2.tr.translation.x - objet1.tr.translation.x) / norm2point(objet1, objet2);
+        break;
+    case 'Y':
+        valren = (objet2.tr.translation.y - objet1.tr.translation.y) / norm2point(objet1, objet2);
+        break;
+    case 'Z':
+        valren = (objet2.tr.translation.z - objet1.tr.translation.z) / norm2point(objet1, objet2);
+        break;
+    }
+    return valren;
+}
+
+float formuleForceCollision(float temps) {
+    return (-1.0*logf((50.0*temps) + 15.0)) + 3;
+}
 
 // **************************************************************************
 
@@ -134,7 +173,6 @@ static void keyboard_callback(unsigned char key, int, int)
             jump_time_0 = timer;
         }
         break;
-
   }
 }
 
@@ -146,16 +184,24 @@ static void special_callback(int key, int, int)
     switch (key){
 
     case GLUT_KEY_UP:
-        move[UP] = true;
+        if (move_enable) {
+            move[UP] = true;
+        }
         break;
     case GLUT_KEY_DOWN:
-        move[DOWN] = true;
+        if (move_enable) {
+            move[DOWN] = true;
+        }
         break;
     case GLUT_KEY_LEFT:
-        move[LEFT] = true;
+        if (move_enable) {
+            move[LEFT] = true;
+        }
         break;
     case GLUT_KEY_RIGHT:
-        move[RIGHT] = true;
+        if (move_enable) {
+            move[RIGHT] = true;
+        }
         break;
     }
 }
@@ -186,21 +232,87 @@ static void timer_callback(int)
 {
     timer += time_step;
 
-    //detection des collisions
-    // -----------------------------------------------------------------------------------
+    // Reinitialisation des vecteurs de vitesse et d'acceleration
+    // ____________________________________________________________________________________
+
+    /*
+    vect_acceleration[] = {0.0,
+                           0.0,
+                           0.0};
+
+    vect_vitesse[] = { 0.0,
+                       0.0,
+                       0.0 }; 
+    */
+
+
+    // Detection des collisions
+    // ------------------------------------------------------------------------------------
 
     if (norm2point(obj[2], obj[0]) < rayon_collision * rayon_collision) {
-        printf("Collision!\n");
+
+        collision_time_0 = timer;
+        collision_flag = true;
+        move_enable = false;
+        printf("[$]Collision! (time:%f)\n",timer);
     }
+    else {}
+
+    // Force de pesenteur
+    // ____________________________________________________________________________________
+
+    if (obj[2].tr.translation.z > 0) { // Si l'objet est en l'air
+
+        vect_acceleration[Z] += -masse * g; // Application de la formule P=mg
+
+        if (obj[2].tr.translation.y < 0) { // sil'objet est sous le sol
+            obj[2].tr.translation.y = 0; // Le ramener a la surface
+        }
+    }
+
+    // Application de la force sur le personnage
+    // ------------------------------------------------------------------------------------
+
+    if(collision_flag){
+
+        collision_time = timer - collision_time_0; // Comptage du temps depuis la collision
+        // TODO : il faudra modifier ce bout de code pour prendre en compte toutes les collisions
+
+        if (formuleForceCollision(collision_time) > 0) {
+
+            printf("[$]Force applied! Value = %f (time: %f)\n", formuleForceCollision(collision_time),timer); // Permet de s'informer
+
+            /*
+            * Ancienne méthode de gestion de la foce de collision
+            obj[2].tr.translation.z += -getZnorm(obj[2], obj[0])*formuleForceCollision(collision_time);
+            obj[2].tr.translation.y += -getYnorm(obj[2], obj[0]) * formuleForceCollision(collision_time);
+            obj[2].tr.translation.x += -getXnorm(obj[2], obj[0])*formuleForceCollision(collision_time);
+            */
+
+            vect_acceleration[X] = -getNorm('X',obj[2], obj[0]) * formuleForceCollision(collision_time);
+            vect_acceleration[Y] = -getNorm('Y',obj[2], obj[0]) * formuleForceCollision(collision_time);
+            vect_acceleration[Z] = -getNorm('Z',obj[2], obj[0]) * formuleForceCollision(collision_time);
+        }
+        else {
+            collision_flag = false; // ACtivation du flag
+            move_enable = true; // Empeche le joueur d'utiliser les commandes
+        }
+    }
+
 
     // Saut du personnage
     // -----------------------------------------------------------------------------------
 
     if (jump_flag) {
-        jump_time = timer - jump_time_0;
+
+        jump_time = timer - jump_time_0; // Temps du saut du personnage
+
         if ((-g*jump_time*jump_time + jump_speed * jump_time) > 0) {
+
             //printf("Position = %f\n",(-g * jump_time * jump_time + jump_speed * jump_time));
-            obj[2].tr.translation.y += -2.00000000000000 * g * jump_time + jump_speed;
+
+            vect_vitesse[Z] += jump_speed; //
+
             if (obj[2].tr.translation.y<0) {
                 obj[2].tr.translation.y = 0;
             }
