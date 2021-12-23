@@ -27,12 +27,17 @@ text text_to_draw[nb_text];
 // __________________________________________________
 
 // 1. Deplacements
-float vect_acceleration[3] = { 0.0,0.0,0.0 }; // vecteur d'acceleration
 float vect_vitesse[3] = { 0.0,0.0,0.0 }; // vecteur de vitesse
 enum coordonnés {X,Y,Z};
 
 // 2. Caractéristiques
 float masse = 200.0;
+
+//3. Force de frottement
+float F = 0.0;
+
+// detection de vol
+bool airborn_flag = false;
 
 
 // Gestion du saut
@@ -43,34 +48,54 @@ bool jump_enable = true;
 
 float jump_time_0 = 0.000000000; // first moment of the jump
 float jump_time = 0.00000000000; //
-float g = 9.810000;
-float jump_speed = 0.50000;
+ 
+float g = 9.810000/8; // Constante gravitationelle
+float jump_speed = 1.0000; // Vitesse du saut quand initié
 
 // Gestion des deplacements
 //____________________________________________________
 enum directions {UP,DOWN,LEFT,RIGHT};
-bool move[] = {false,false,false,false};
+bool move[] = {false,false,false,false}; // Permet d'établir si il faut bouger qqchs
 bool move_enable = true;
 
 // Gestion du temps
 // ___________________________________________________
-float timer = 0;
-float time_step = 0.0025;
+float timer = 0; // Commencement du temps à 0
+float time_step = 0.025; // Base: 0.025
 
-// Gestion des collisions
+// Gestion des collisions & Frotements
 // ___________________________________________________
-float rayon_collision = 1.0;
 
+// 1. Rayon de collision
+float rayon_collision = 1.0; // valeur recomandé par le professeur
+
+// 2. Detecteurs de collisions
 bool collision_flag = false;
 bool collision_enable = true;
 
+// 3. Temps de la collision
 float collision_time_0 = 0.000000000; // first moment of the jump
 float collision_time = 0.00000000000; //
+
+// 4. Force de la collisions
+float vitesse_collision = 0.5; // Vitesse à l'instant 0 de la collision
+
+// 5. Variable de calcul temporaire
+float vect_vit_temp[3] = {0.0,0.0,0.0};
+
+// 6. Coeficient de frottements
+float mu_c = 0.8;
 
 
 // AJOUTS DE FONCTIONS
 // **************************************************************************
 
+// Calcul de norme d'un vecteur en 3D
+float norm(float table[3]) {
+    return sqrt(table[X] * table[X] + table[Y] * table[Y] + table[Z] * table[Z]);
+}
+
+// Calcul de la norme d'un vecteur entre deux objets
 float norm2point(objet3d objet1, objet3d objet2) {
     return sqrt((objet2.tr.translation.x - objet1.tr.translation.x )*(objet2.tr.translation.x - objet1.tr.translation.x)+(objet2.tr.translation.y - objet1.tr.translation.y)*(objet2.tr.translation.y - objet1.tr.translation.y) + (objet2.tr.translation.z - objet1.tr.translation.z)*(objet2.tr.translation.z - objet1.tr.translation.z));
 }
@@ -93,8 +118,22 @@ float getNorm(char choix, objet3d objet1, objet3d objet2) {
     return valren;
 }
 
-float formuleForceCollision(float temps) {
-    return (-1.0*logf((50.0*temps) + 15.0)) + 3;
+// Fonction décrivant l'évolution de la vitesse apres une collision
+float collisionSpeed(float t, float vitesse[3],float mu_c) {
+    return vitesse_collision * exp((-t)*(norm(vitesse))/(mu_c));
+}
+
+void copyVector(float table1[3], float table2[2]) {
+    table2[X] = table1[X];
+    table2[Y] = table1[Y];
+    table2[Z] = table1[Z];
+}
+
+void resetVector(float table[3]) {
+    table[X] = 0.0;
+    table[Y] = 0.0;
+    table[Z] = 0.0;
+
 }
 
 // **************************************************************************
@@ -170,7 +209,6 @@ static void keyboard_callback(unsigned char key, int, int)
         if (jump_enable) {
             jump_enable = false;
             jump_flag = true;
-            jump_time_0 = timer;
         }
         break;
   }
@@ -224,78 +262,83 @@ static void special_callback_up(int key, int, int)
     }
 }
 
-
 /*****************************************************************************\
 * timer_callback                                                              *
 \*****************************************************************************/
-static void timer_callback(int)
-{
+
+static void timer_callback(int){
+    
+    // Detection de vol
+    //---------------------------------------------------------------------------------------
+    if(!airborn_flag && obj[2].tr.translation.y > 0) {
+        airborn_flag = true;
+        jump_time_0 = timer;
+    }
+    else if (airborn_flag && obj[2].tr.translation.y <= 0) {
+        airborn_flag = false;
+    }
+
+    // definitions des temps
+    // -------------------------------------------------------------------------------------
     timer += time_step;
-
-    // Reinitialisation des vecteurs de vitesse et d'acceleration
-    // ____________________________________________________________________________________
-
-    /*
-    vect_acceleration[] = {0.0,
-                           0.0,
-                           0.0};
-
-    vect_vitesse[] = { 0.0,
-                       0.0,
-                       0.0 }; 
-    */
-
-
+    jump_time = timer - jump_time_0;
+    collision_time = timer - collision_time_0;
+    
+    
     // Detection des collisions
     // ------------------------------------------------------------------------------------
 
     if (norm2point(obj[2], obj[0]) < rayon_collision * rayon_collision) {
 
         collision_time_0 = timer;
+
+        /*  
+        * Tout ce qui est lié a la collision et fait une seule fois rentre ici:
+        * Par exemple, on applique une seul fois la vitesse de vol
+        */
+
+        vect_vitesse[Z] += -getNorm('Z', obj[2], obj[0]) * collisionSpeed(collision_time, vect_vitesse, mu_c);
+
         collision_flag = true;
         move_enable = false;
+
         printf("[$]Collision! (time:%f)\n",timer);
     }
-    else {}
 
     // Force de pesenteur
     // ____________________________________________________________________________________
 
-    if (obj[2].tr.translation.z > 0) { // Si l'objet est en l'air
+    if (airborn_flag) { // Si l'objet est en l'air
 
-        vect_acceleration[Z] += -masse * g; // Application de la formule P=mg
+        vect_vitesse[Z] += -g*jump_time; // Application de la formule P=mg
 
-        if (obj[2].tr.translation.y < 0) { // sil'objet est sous le sol
-            obj[2].tr.translation.y = 0; // Le ramener a la surface
-        }
     }
 
-    // Application de la force sur le personnage
+    // Application de la collision avec prise en compte des frotements secs
     // ------------------------------------------------------------------------------------
+
+    
 
     if(collision_flag){
 
-        collision_time = timer - collision_time_0; // Comptage du temps depuis la collision
-        // TODO : il faudra modifier ce bout de code pour prendre en compte toutes les collisions
-
-        if (formuleForceCollision(collision_time) > 0) {
-
-            printf("[$]Force applied! Value = %f (time: %f)\n", formuleForceCollision(collision_time),timer); // Permet de s'informer
-
-            /*
-            * Ancienne méthode de gestion de la foce de collision
-            obj[2].tr.translation.z += -getZnorm(obj[2], obj[0])*formuleForceCollision(collision_time);
-            obj[2].tr.translation.y += -getYnorm(obj[2], obj[0]) * formuleForceCollision(collision_time);
-            obj[2].tr.translation.x += -getXnorm(obj[2], obj[0])*formuleForceCollision(collision_time);
-            */
-
-            vect_acceleration[X] = -getNorm('X',obj[2], obj[0]) * formuleForceCollision(collision_time);
-            vect_acceleration[Y] = -getNorm('Y',obj[2], obj[0]) * formuleForceCollision(collision_time);
-            vect_acceleration[Z] = -getNorm('Z',obj[2], obj[0]) * formuleForceCollision(collision_time);
+        if (airborn_flag) {
+            mu_c = 0.017;
         }
         else {
-            collision_flag = false; // ACtivation du flag
-            move_enable = true; // Empeche le joueur d'utiliser les commandes
+            mu_c = 0.8/20;
+        }
+
+        vect_vitesse[X] = -getNorm('X',obj[2], obj[0]) * collisionSpeed(collision_time,vect_vitesse,mu_c);
+        vect_vitesse[Y] = -getNorm('Y',obj[2], obj[0]) * collisionSpeed(collision_time,vect_vitesse,mu_c);
+
+        printf("[$]Force applied! Value = %f (collision time: %f)\n", collisionSpeed(collision_time, vect_vitesse, mu_c), collision_time); // Permet de s'informer
+
+        if (collisionSpeed(collision_time, vect_vitesse, mu_c) < 0.15) {
+            printf("[$] Collision ended.\n");
+            resetVector(vect_vitesse);
+
+            collision_flag = false;  // ACtivation du flag
+            move_enable = true;     // Empeche le joueur d'utiliser les commandes
         }
     }
 
@@ -305,22 +348,10 @@ static void timer_callback(int)
 
     if (jump_flag) {
 
-        jump_time = timer - jump_time_0; // Temps du saut du personnage
+            vect_vitesse[Z] += jump_speed; // Ajout de la vitesse du saut.
 
-        if ((-g*jump_time*jump_time + jump_speed * jump_time) > 0) {
-
-            //printf("Position = %f\n",(-g * jump_time * jump_time + jump_speed * jump_time));
-
-            vect_vitesse[Z] += jump_speed; //
-
-            if (obj[2].tr.translation.y<0) {
-                obj[2].tr.translation.y = 0;
-            }
-        }
-        else {
             jump_flag = false;
             jump_enable = true;
-        }
     }
 
     // Deplacement du personnage
@@ -344,6 +375,30 @@ static void timer_callback(int)
     if (move[RIGHT]) {
         obj[2].tr.translation.x += -0.1f;
     }
+
+
+    if (obj[2].tr.translation.y < 0) { // sil'objet est sous le sol
+        obj[2].tr.translation.y = 0; // Le ramener a la surface
+    }
+
+    // Application du vecteur vitesse a la position
+    // ------------------------------------------------------------------------
+    obj[2].tr.translation.x += vect_vitesse[X];
+    obj[2].tr.translation.y += vect_vitesse[Z];
+    obj[2].tr.translation.z += vect_vitesse[Y];
+
+
+    printf("[$] Coord (%f,%f,%f) | Speed (%f,%f,%f)\n",obj[2].tr.translation.x, obj[2].tr.translation.y, obj[2].tr.translation.z, vect_vitesse[X], vect_vitesse[Y], vect_vitesse[Z]);
+
+    // Si plus bas que sol
+    //--------------------------------------------------------------------------
+    if (obj[2].tr.translation.y < 0) { // Si jamais sous le sol
+        obj[2].tr.translation.y = 0; 
+        if (vect_vitesse[Z] < 0) { // si le vecteur vitesse est negatif au sol
+            vect_vitesse[Z] = 0;
+        }
+    }
+
 
     glutTimerFunc(25, timer_callback, 0);
     glutPostRedisplay();
